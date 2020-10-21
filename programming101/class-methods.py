@@ -24,26 +24,30 @@ class Vehicle:
 
     def move(self):
         self.position += self.speed
-        print(f"{self.speed}")
+        # print(f"{self.speed}")
         print(f"{self.category} is moving. New position is {self.position}")
 
     def accelerate(self):
         potential = self.speed + self.acceleration
         if self.top_speed >= potential:
-            self.speed = self.speed + self.acceleration
-            print("accelerating")
+            self.speed += self.acceleration
+            print(self.speed)
         else:
-            print("Top Speed reached, no more acceleration left.")
+            self.speed = self.top_speed
+            print(self.speed)
 
 
+i = 0
 motorcycle = Vehicle("Ducati", 12, 3)
-motorcycle.accelerate()
-motorcycle.move()
-motorcycle.accelerate()
-motorcycle.move()
-motorcycle.accelerate()
-motorcycle.move()
-motorcycle.accelerate()
-motorcycle.move()
-motorcycle.accelerate()
-motorcycle.move()
+while i <= 20:
+    motorcycle.accelerate()
+    motorcycle.move()
+    i += 1
+# motorcycle.accelerate()
+# motorcycle.move()
+# motorcycle.accelerate()
+# motorcycle.move()
+# motorcycle.accelerate()
+# motorcycle.move()
+# motorcycle.accelerate()
+# motorcycle.move()
