@@ -65,10 +65,13 @@
       >Favorite Food
       <select name="favorite-food" id="favorite-food" required>
         <option value="">---Please Select a Food ---</option>
-        <option value="elk">Elk</option>
-        <!-- Selected will be the default -->
-        <option value="enchiladas">Enchiladas</option>
-        <option value="ramen">Ramen</option>
+        <optgroup label="protein">
+          <option value="elk">Elk</option>
+        </optgroup>
+        <optgroup label="whole meals">
+          <option value="enchiladas">Enchiladas</option>
+          <option value="ramen">Ramen</option>
+        </optgroup>
       </select>
     </label>
   </body>
