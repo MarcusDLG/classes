@@ -1,0 +1,13 @@
+/** @format */
+
+h1 {
+	color: aqua;
+	background-color: black;
+	font-size: 10rem;
+	padding: 10rem;
+	margin: 10rem;
+}
+
+h1.active {
+	color: red;
+}
