@@ -1,0 +1,13 @@
+body {
+  border: 1rem solid;
+}
+
+/* .checkbox-group {
+  border: 1rem solid;
+} */
+h1 {
+  color: rgb(43, 96, 78);
+}
+.radio {
+  color: blue;
+}

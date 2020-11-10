@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Testing inputs</title>
+  </head>
+  <body>
+    <label for="username"
+      >Username
+      <input
+        id="username"
+        class="special"
+        name="user-name"
+        placeholder="Username"
+      />
+    </label>
+    <hr />
+    <label for="agree">
+      By clicking the box you agree to the terms
+      <input type="checkbox" id="agree" name="agree" />
+    </label>
+
+    <div class="checkbox-group">
+      <h1>How are we traveling today?</h1>
+      <label>
+        Cars
+        <input value="cars" name="transport" type="checkbox" />
+      </label>
+      <label>
+        Trains
+        <input value="trains" name="transport" type="checkbox" />
+      </label>
+      <label>
+        Planes
+        <input value="planes" name="transport" type="checkbox" />
+      </label>
+      <label>
+        Horseback
+        <input value="horseback" name="transport" type="checkbox" />
+      </label>
+    </div>
+    <hr />
+    <div class="radio">
+      <label for="cars"
+        >Cars
+        <input id="cars" name="transport" value="cars" type="radio" />
+      </label>
+      <label for="trains"
+        >Trains
+        <input id="trains" name="transport" value="trains" type="radio" />
+      </label>
+      <label for="planes"
+        >Planes
+        <input id="planes" name="transport" value="planes" type="radio" />
+      </label>
+      <label>
+        Horseback
+        <input id="horseback" name="transport" value="horseback" type="radio" />
+      </label>
+    </div>
+  </body>
+</html>

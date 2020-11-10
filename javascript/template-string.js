@@ -133,11 +133,19 @@
 // console.log(newPerson);
 
 //you do not need everything
-let me = ["Clint", 29, "clint@digitalcrafts.com", 160];
-let [name, age, email, weight] = me;
-console.log("1", name, age, weight);
+// let me = ["Clint", 29, "clint@digitalcrafts.com", 160];
+// let [name, age, email, weight] = me;
+// console.log("1", name, age, weight);
 
-// you can also leave out some items
-[name, age, , weight] = me;
-console.log(me);
-console.log(name, age, weight);
+
+// // you can also leave out some items
+// [name, age, , weight] = me;
+// console.log(me);
+// console.log(name, age, weight);
+
+
+let me = {name,age} = {name:"Clint", age:29, email:"clint@digitalcrafts.com"}
+console.log(name) //Clint
+console.log(age) //29
+console.log(me.email)
+console.log(me) //{name:"Clint", age:29, email:"clint@digitalcrafts.com"}
