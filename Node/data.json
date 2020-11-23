@@ -1,5 +1,7 @@
 [
   { "name": "Clint", "age": 29 },
   { "name": "Anna", "age": 27 },
-  { "name": "Olivia", "age": 11 }
+  { "name": "Olivia", "age": 11 },
+  { "name": "Jack", "age": 8 },
+  { "name": "Baby", "age": 11 }
 ]
