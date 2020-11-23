@@ -1,5 +1,5 @@
 const http = require("http");
-const port = 3000; //not const port = {3000}
+const port = 4200; //not const port = {3000}
 
 //html being driven to page via server side render.
 const htmlContent = `
@@ -17,6 +17,7 @@ const htmlContent = `
         </ul>
         <script>
             console.log("Seriously, send me ramen")
+            console.log(${port})
         </script>
     </body>
 </html>
