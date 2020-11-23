@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
   });
-  res.write(JSON.stringify(ships));
+  res.write(JSON.stringify(people));
   res.end();
 });
 server.listen(port, () => {
