@@ -11,6 +11,6 @@ const fs = require("fs");
 
 let data = fs.readFileSync("data.json", "utf8");
 let dataArr = JSON.parse(data);
-dataArr.map((value, index) =>
-  console.log(`${value.name} is ${value.age} years old`)
-);
+dataArr.map((value, index) => {
+  console.log(`${value.name} is ${value.age} years old`);
+});
