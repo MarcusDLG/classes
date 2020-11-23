@@ -1,16 +1,14 @@
 const os = require("os");
 const getInfo = () => {
   console.log(
-    os.platform(),
-    ",",
-    os.homedir(),
-    ",",
-    os.hostname(),
+    // os.networkInterfaces(),
+    // ",",
+    os.userInfo(),
     ",",
     os.totalmem(),
     ",",
     os.freemem()
   );
-  console.log(Object.keys(os));
 };
-getInfo();
+let asdfasdf = getInfo();
+console.log(asdfasdf);
