@@ -9,16 +9,21 @@ const htmlContent = `
         <title>My favorite foods!</title>
     </head>
     <body>
-        <h1>I'm hungry just thinking about the following:</h1>
+        <h1>People and Contact</h1>
         <ul>
-            <li>Ramen</li>
-            <li>Enchiladas</li>
-            <li>Sushi</li>
+            
         </ul>
         <script>
           fetch("http://localhost:5566")
           .then(res=>res.json())
-          .then(data => console.log(data))
+          .then(data => {
+            let listEl = document.querySelector("ul")
+            data.forEach(person=>{
+              let li = document.createElement("li")
+              li.innerText = person.first + '  '+ person.last + '   ' + person.email
+              listEl.append(li)
+            })
+          })
           .catch(err=>console.log(err))
         </script>
     </body>
