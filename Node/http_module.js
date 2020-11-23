@@ -16,8 +16,10 @@ const htmlContent = `
             <li>Sushi</li>
         </ul>
         <script>
-            console.log("Seriously, send me ramen")
-            console.log(${port})
+          fetch("http://localhost:5566")
+          .then(res=>res.json())
+          .then(data=>console.log(data))
+          .catch(err=>console.log(err))
         </script>
     </body>
 </html>
