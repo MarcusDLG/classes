@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
-		<title>Testing inputs</title>
-	</head>
-	<body>
-		<!-- <label for="username"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Testing inputs</title>
+  </head>
+  <body>
+    <!-- <label for="username"
       >Username
       <input
         id="username"
@@ -81,41 +81,49 @@
       </label>
       <button>Login</button>
     </form> -->
-		<form id="login">
-			<input type="color" name="color" />
-			<input type="date" name="date" id="date" />
-			<input type="email" name="email" id="email" />
-			<input name="username" />
-			<input name="password" type="password" />
-			<input name="agree" checked type="checkbox" />Agree to terms?
-			<button>Login</button>
-		</form>
-		<script>
-			let loginForm = document.querySelector("#login");
-			loginForm.addEventListener("submit", (evt) => {
-				evt.preventDefault();
-				let results = [...evt.target.elements]
-					.filter((el) => el.name)
-					.map((el) => ({ name: el.name, value: el.value }));
-				let d = document.createElement("div");
-				for (let i = 0; i < results.length; i++) {
-					d.append(results[i].name, ":", results[i].value, "        ");
-				}
-				document.body.append(d);
-			});
-			// let loginForms = document.querySelector("#login");
-			// loginForms.addEventListener("submit", (evt) => {
-			//   evt.preventDefault();
-			//   // console.log("I can do something else with the form!");
-			//   console.log(evt.target.elements); //HTMLFormControlCollection
-			//   //if it has a name or id you can do this
-			//   console.log(evt.target.elements["login"]);
-			//   //also you can spread it into an array and loop it
-			//   let results = [...evt.target.elements]
-			//     .filter((el) => el.name)
-			//     .map((el) => ({ name: el.name, value: el.value }));
-			//   console.log(results);
-			// });
-		</script>
-	</body>
+    <form id="login">
+      <input type="color" name="color" />
+      <input type="date" name="date" id="date" />
+      <input type="email" name="email" id="email" />
+      <input name="username" />
+      <input name="password" type="password" />
+      <input name="agree" checked type="checkbox" />Agree to terms?
+      <button>Login</button>
+    </form>
+
+    <div>
+      <ul>
+        <li><div>reddit</div></li>
+        <li><div>facebook</div></li>
+      </ul>
+    </div>
+    <script>
+      let loginForm = document.querySelector("#login");
+      loginForm.addEventListener("submit", (evt) => {
+        evt.preventDefault();
+        let results = [...evt.target.elements]
+          .filter((el) => el.name)
+          .map((el) => ({ name: el.name, value: el.value }));
+        let d = document.createElement("div");
+        for (let i = 0; i < results.length; i++) {
+          d.append(results[i].name, ":", results[i].value, "        ");
+        }
+        document.body.append(d);
+      });
+
+      // let loginForms = document.querySelector("#login");
+      // loginForms.addEventListener("submit", (evt) => {
+      //   evt.preventDefault();
+      //   // console.log("I can do something else with the form!");
+      //   console.log(evt.target.elements); //HTMLFormControlCollection
+      //   //if it has a name or id you can do this
+      //   console.log(evt.target.elements["login"]);
+      //   //also you can spread it into an array and loop it
+      //   let results = [...evt.target.elements]
+      //     .filter((el) => el.name)
+      //     .map((el) => ({ name: el.name, value: el.value }));
+      //   console.log(results);
+      // });
+    </script>
+  </body>
 </html>

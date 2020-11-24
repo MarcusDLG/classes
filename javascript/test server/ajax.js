@@ -12,8 +12,9 @@ const ajax = (url, callback, method = "GET") => {
 	request.send();
 };
 
-ajax("test.txt", (faces) => {
-	console.log(faces);
+ajax("https://sdg-octodex.herokuapp.com", (results) => {
+	resultsArray = JSON.parse(results);
+	console.log(resultsArray);
 });
 
 ajax("test.txt", (resp) => {
