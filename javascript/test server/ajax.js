@@ -12,8 +12,8 @@ const ajax = (url, callback, method = "GET") => {
 	request.send();
 };
 
-ajax("test.txt", (results) => {
-	console.log(results);
+ajax("test.txt", (faces) => {
+	console.log(faces);
 });
 
 ajax("test.txt", (resp) => {
